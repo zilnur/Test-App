@@ -29,6 +29,7 @@ struct PersistenceController {
     }()
 
     let container: NSPersistentContainer
+    let viewContext: NSManagedObjectContext
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Test_App")
@@ -52,5 +53,6 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+        viewContext = container.viewContext
     }
 }

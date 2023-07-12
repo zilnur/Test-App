@@ -14,9 +14,6 @@ struct CategoriesView: View {
     @State var isPresented = false
     
     var body: some View {
-//        VStack {
-//            CustomNavigationView(isPresented: $isPresented, selectedCategory: $selectedCategories)
-//                .padding(.horizontal)
             NavigationView {
                 ScrollView(showsIndicators: false) {
                     VStack {

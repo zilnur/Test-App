@@ -30,7 +30,6 @@
 		BCA866FE2A52B4BE00A9ACA4 /* SavedDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA866FD2A52B4BE00A9ACA4 /* SavedDish.swift */; };
 		BCA867002A52B57C00A9ACA4 /* ViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA866FF2A52B57C00A9ACA4 /* ViewContext.swift */; };
 		BCA867022A5303AC00A9ACA4 /* DishCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA867012A5303AC00A9ACA4 /* DishCard.swift */; };
-		BCA867042A53139500A9ACA4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA867032A53139500A9ACA4 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +57,6 @@
 		BCA866FD2A52B4BE00A9ACA4 /* SavedDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDish.swift; sourceTree = "<group>"; };
 		BCA866FF2A52B57C00A9ACA4 /* ViewContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContext.swift; sourceTree = "<group>"; };
 		BCA867012A5303AC00A9ACA4 /* DishCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCard.swift; sourceTree = "<group>"; };
-		BCA867032A53139500A9ACA4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 				BCA866D42A4F279800A9ACA4 /* CategoriesViewModel.swift */,
 				BCA866DB2A5049BE00A9ACA4 /* CategoriesModel.swift */,
 				BCA866DD2A504ACC00A9ACA4 /* CategoriesView.swift */,
-				BCA867032A53139500A9ACA4 /* SwiftUIView.swift */,
 				BCA866DF2A506BB300A9ACA4 /* CategoryView.swift */,
 			);
 			path = CategoriesModule;
@@ -247,7 +244,6 @@
 			files = (
 				BCA866E52A517F1800A9ACA4 /* BasketView.swift in Sources */,
 				BCA866F52A5232DB00A9ACA4 /* MainView.swift in Sources */,
-				BCA867042A53139500A9ACA4 /* SwiftUIView.swift in Sources */,
 				BCA867002A52B57C00A9ACA4 /* ViewContext.swift in Sources */,
 				BCA866D82A4F27B000A9ACA4 /* NetworkManager.swift in Sources */,
 				BCA866CA2A4F269200A9ACA4 /* Persistence.swift in Sources */,

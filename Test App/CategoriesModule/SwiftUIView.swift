@@ -7,14 +7,31 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+import SwiftUI
+
+struct ContentqView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                NavigationLink(destination: DetailView()) {
+                    Text("Go to Detail")
+                }
+            }
+            .navigationBarTitle("Home")
+        }
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct ContentqView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        SwiftUIView()
+        ContentqView()
+    }
+}
+
+struct DetailView: View {
+    var body: some View {
+        Text("Detail View")
+            .navigationBarTitle("Detail")
     }
 }

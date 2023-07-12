@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Category: Identifiable {
+    let id: Int
+    var name: String
+    let imageUrl: String
+}

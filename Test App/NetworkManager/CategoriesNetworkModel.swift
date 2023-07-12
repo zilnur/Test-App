@@ -1,11 +1,11 @@
 import Foundation
 
-struct Categories: Decodable {
+struct CategoryTask: Decodable {
     let id: Int
     let name: String
     let imageUrl: String
 }
 
 struct CategoriesTask: Decodable {
-    let сategories: [Categories]
+    let сategories: [CategoryTask]
 }

@@ -8,9 +8,38 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var selectedTab: Tabs = .main
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            TabView(selection: $selectedTab) {
+                CategoriesView()
+                    .tag(Tabs.main)
+                    .toolbar(.hidden, for: .tabBar)
+                Text("Hi")
+                    .tag(Tabs.search)
+                    .toolbar(.hidden, for: .tabBar)
+                BasketView()
+                    .tag(Tabs.basket)
+                    .toolbar(.hidden, for: .tabBar)
+                Text("Hi")
+                    .tag(Tabs.profile)
+                    .toolbar(.hidden, for: .tabBar)
+            }
+            HStack {
+                ForEach(Tabs.allCases, id: \.rawValue) { tab in
+                    CustomTabItem(tab: tab, selectedTab: $selectedTab)
+                }
+            }
+            .padding([.horizontal, .bottom])
+            .background(.white, in: Rectangle())
+            
+        }
+        .ignoresSafeArea()
     }
+    
 }
 
 struct MainView_Previews: PreviewProvider {
